@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Collecting basic user information through a form.">
+</head>
+<body>
+
+    <form action="submit_form.php" method="post" id="userForm">
+        <!-- Basic User Information -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <!-- Additional Information -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 1234567890" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="ghana">Ghana</option>
+            <!-- Add more country options as needed -->
+        </select>
+
+        <!-- Radio Buttons and Checkboxes -->
+        <fieldset>
+            <legend>Interests:</legend>
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+
+            <label for="reading">Reading:</label>
+            <input type="checkbox" id="reading" name="hobbies[]" value="reading">
+
+            <label for="sports">Sports:</label>
+            <input type="checkbox" id="sports" name="hobbies[]" value="sports">
+
+            <label for="music">Music:</label>
+            <input type="checkbox" id="music" name="hobbies[]" value="music">
+
+            <label for="travel">Travel:</label>
+            <input type="checkbox" id="travel" name="hobbies[]" value="travel">
+        </fieldset>
+
+        <!-- Text Area and Submit Button -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+
