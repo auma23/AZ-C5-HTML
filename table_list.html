@@ -8,25 +8,85 @@
     <meta name="description" content="Welcome to my portfolio website. Explore my projects and history.">
     <meta name="keywords" content="portfolio, projects, history, personal website">
     <meta name="author" content="Your Name">
+    <style>
+      table {
+          border-collapse: collapse;
+      }
+      table, th, td {
+          border: 1px solid black;
+      }
+  </style>
 </head>
 <body>
-    <div style="text-align: center;">
+  <table border="1">
+    <thead>
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+       
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+        </tr>
+   
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+    
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+        </tr>
+    </tbody>
+</table>
+
+
+       
+         
         <h1>Welcome to My Portfolio</h1>
-        <div style="border: 1px solid black; padding: 20px; width: 300px; margin: 0 auto;">
+      
             <h2>Projects</h2>
-            <ul style="list-style-type: square;">
+            <ul>
                 <li>Personal Website Redesign</li>
                 <li>Data Analysis Dashboard</li>
                 <li>Mobile App Development</li>
                 <li>Machine Learning Research</li>
             </ul>
             <h2>History</h2>
-            <ol style="list-style-type: lower-alpha;">
+            <ol>
                 <li>World War I</li>
                 <li>The French Revolution</li>
                 <li>The Renaissance</li>
             </ol>
-        </div>
-    </div>
+      
 </body>
 </html>
